@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "antd": "^5.19.0",
+    "antd": "^5.20.0",
     "aos": "^2.3.4",
     "axios": "^1.7.3",
     "formik": "^2.4.6",

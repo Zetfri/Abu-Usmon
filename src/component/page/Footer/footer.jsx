@@ -7,6 +7,8 @@ import Instagram from "../../asstes/instagram.png"
 import Telegram from "../../asstes/telegram (1).png"
 import Facebook from "../../asstes/facebook.png"
 import Youtube from "../../asstes/youtube.png"
+import Uzb from "../../asstes/uzbekistan.png"
+import Sau from "../../asstes/flag.png"
 
 function Footer(props) {
     return (
@@ -36,9 +38,20 @@ function Footer(props) {
                         </div>
                         <div className={"flex gap-6 justify-center items-center"} data-aos="fade-down"  data-aos-delay="400">
                             <img src={Phone} alt="" className={"w-[40px] h-[40px]"}/>
-                            <span className={"text-white flex flex-col justify-start items-start"}>
+                            <span className={"text-white flex flex-col justify-start items-start gap-1"}>
                                 <p className={"text-[24px]"}>Telefon raqami</p>
-                                <p>+998(90) 038-10-11</p>
+                                <a href="" className={"flex w-auto gap-2 justify-center items-center"}>
+                                    <img src={Uzb} alt="" className={"w-[30px] h-[30px]"}/>
+                                    📞+998-97-386-07-87
+                                </a>
+                                <a href="" className={"flex w-auto gap-2 justify-center items-center"}>
+                                    <img src={Uzb} alt="" className={"w-[30px] h-[30px]"}/>
+                                    📞+998-91-322-07-87
+                                </a>
+                                <a href="" className={"flex w-auto gap-2 justify-center items-center"}>
+                                    <img src={Sau} alt="" className={"w-[30px] h-[30px]"}/>
+                                    📞+966-00966509053786
+                                </a>
                             </span>
                         </div>
                         <div className={"flex gap-6 justify-center items-center"} data-aos="fade-down" data-aos-delay="500" >
