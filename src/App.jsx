@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Login from './component/Login/login.jsx';
 import Aboutus from './component/page/About Us/aboutus.jsx';
 import Packege from './component/page/Packege/packege.jsx';
 import Services from './component/page/Services/services.jsx';
@@ -16,7 +15,7 @@ const App = () => {
 
 	})
 	return (
-		<div>
+		<div >
 			<Nav />
 			<Routes>
 				<Route path='/' element={<Tours />} />
@@ -26,6 +25,7 @@ const App = () => {
 				<Route path='/signin' element={<Signin />} />
 				<Route path='/galer' element={<Gallereya/>} />
 			</Routes>
+
 		</div>
 	);
 };

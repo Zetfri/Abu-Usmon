@@ -8,13 +8,13 @@ import Services from "../Services/services.jsx";
 
 function Choose(props) {
     return (
-        <div className="w-[100%] h-screen flex-col  bg-white   gap-[150px]  flex">
-            <div className="flex  w-[100%] h-screen bg-white sm:flex-col sm:justify-center sm:items-center  ">
-                <div className={"w-[50%] h-screen   "}>
-                    <img src={Car} alt="" className={"w-[90%] translate-x-20 pt-[100px] sm:hidden"}/>
+        <div className="w-[100%] h-screen flex-col   bg-white   gap-[150px]  flex  ">
+            <div className="flex  w-[100%] h-screen bg-white sm:w-full  lg:w-full lg:flex-col ">
+                <div className={"w-[50%]  h-screen  sm:hidden lg:w-[90%]"}>
+                    <img src={Car} alt="" className={"w-[90%] translate-x-20 pt-[100px] sm:hidden mt-8"}/>
                 </div>
-                <div className={"w-[50%] h-screen  sm:flex sm:flex-col sm:w-[95%] sm:px-8"}>
-                    <div className={"translate-y-20  sm:translate-y-[100px]"}>
+                <div className={"w-[50%] h-screen  sm:flex sm:flex-col sm:w-[95%] px-6 lg:flex lg:flex-col lg:w-full"}>
+                    <div className={"translate-y-20 ml-32  sm:translate-y-[100px] sm:ml-0"}>
                         <h1 className={"text-[36px] w-[550px] sm:w-[200px]"}>Nima uchun bizni tanlaysiz?</h1>
                         <p className={"w-[560px] text-[16px] sm:w-full"}>
                             Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
