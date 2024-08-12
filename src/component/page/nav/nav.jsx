@@ -16,15 +16,15 @@ function Nav(props) {
         setIsModalOpen(false);
     };
     return (
-        <div className="w-[100%]  items-center  justify-center gap-7 pt-7 flex sm:w-full sm:gap-2 ">
-<div className={"mr-[550px] sm:mr-0"}>
+        <div className="w-[100%]  items-center  justify-center gap-7 pt-7 flex sm:w-full sm:gap-2  lg:w-full lg:justify-center lg:px-10">
+<div className={"mr-[550px] sm:mr-0 lg:mr-0"}>
 
 
     <Link to="/" className={""}>
-        <img className={"pl-[80px] sm:pl-0 sm:w-[100px] sm:mx-6"} src={Logo} alt=""/>
+        <img className={"pl-[80px] sm:pl-0 sm:w-[100px] sm:mx-6 lg:pl-0"} src={Logo} alt=""/>
     </Link>
 </div>
-<div className={"flex gap-10 "}>
+<div className={"flex gap-10 lg:hidden"}>
 
     <Link to="/" className={"sm:hidden"}>Tour’s</Link>
     <Link to="/signin" className={"sm:hidden"}>Sign In</Link>
@@ -32,11 +32,11 @@ function Nav(props) {
 </div>
 
             <div>
-                <button className={"bg-[#DB6300] hover:bg-[#F07427] text-white font-bold py-2 px-4 rounded"}>Boglanish
+                <button className={"bg-[#DB6300] hover:bg-[#F07427] text-white font-bold py-2 px-4 rounded lg:ml-80"}>Boglanish
                 </button>
 
             </div>
-            <div className={"hidden sm:block"}>
+            <div className={"hidden sm:block lg:block "}>
                 <Button type="" onClick={showModal} className={"h-[42px]"}>
                     <img src={Burger} alt=""/>
                 </Button>

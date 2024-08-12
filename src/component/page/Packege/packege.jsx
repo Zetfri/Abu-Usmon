@@ -42,7 +42,7 @@ const MultiCarousel = () => {
     };
     return (
         <Carousel responsive={responsive}>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 lg:ml-2 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image  height={260} width={250} src={Img} alt="Trip to Thailand" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Thailand</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
@@ -63,11 +63,11 @@ const MultiCarousel = () => {
                     <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
                 </Modal>
             </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 lg:ml-[-120px] items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image  height={260} width={250} src={Img1} alt="Trip to Bali" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Bali</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
+                <p className="text-left text-[16px] text-[#666666] w-[70%] lg:w-[48%]">
                     Join the leader in smallship cruising on the Great Lakes,
                 </p>
                 <p className="text-left">4.2k Review</p>
@@ -78,17 +78,17 @@ const MultiCarousel = () => {
                     <img src={Img1} alt="" className={"mx-auto mb-4"}/>
                     <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Bali</h2>
                     <h5 className={" translate-y-[-12px] text-center"}>4.2k Review</h5>
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
+                    <p className={"text-center w-full"}>Join the leader in smallship cruising on the Great Lakes,</p>
                     <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
                     <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
                     <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
                 </Modal>
             </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 lg:ml-[-250px]  items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image  height={260} width={250} src={Img2} alt="Trip to Maldives" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Maldives</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
+                <p className="text-left text-[16px] text-[#666666] w-[70%] lg:w-[40%]">
                     Join the leader in smallship cruising on the Great Lakes,
                 </p>
                 <p className="text-left">2.9k Review</p>
@@ -105,11 +105,11 @@ const MultiCarousel = () => {
                     <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
                 </Modal>
             </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 lg:ml-[-380px] items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image  height={260} width={250} src={Img3} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
+                <p className="text-left text-[16px] text-[#666666] w-[70%] lg:w-[30%]">
                     Join the leader in smallship cruising on the Great Lakes,
                 </p>
                 <p className="text-left">5.1k Review</p>
@@ -126,11 +126,11 @@ const MultiCarousel = () => {
                     <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
                 </Modal>
             </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 lg:ml-[-500px] items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image  height={260} width={250} src={Img4} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
+                <p className="text-left text-[16px] text-[#666666] w-[70%] lg:w-[30%]">
                     Join the leader in smallship cruising on the Great Lakes,
                 </p>
                 <p className="text-left">5.1k Review</p>
@@ -147,32 +147,45 @@ const MultiCarousel = () => {
                     <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
                 </Modal>
             </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 lg:ml-[-620px] items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image     height={260} width={250} src={Img5} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
+                <p className="text-left text-[16px] text-[#666666] w-[25%]">
                     Join the leader in smallship cruising on the Great Lakes,
                 </p>
                 <p className="text-left">5.1k Review</p>
                 <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
                     View Details
                 </Button>
-                <Modal title="Trip to Japan" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
+                <Modal title="Trip to Japan" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gap: '10px'
+                }}>
                     <img src={Img5} alt="" className={"mx-auto mb-4"}/>
                     <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Japan</h2>
                     <h5 className={" translate-y-[-12px] text-center"}>5.1k Review</h5>
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
+                    <p className="text-left text-[16px] text-[#666666] ">
+                        Join the leader in smallship cruising on the Great Lakes,
+                    </p>
+                    <input type="text" name="" id="" placeholder={"Enter your name..."}
+                           className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
+                    <input type="text" name="" id="" placeholder={"Enter your number..."}
+                           className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
+                    <button
+                        className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish
+                    </button>
                 </Modal>
             </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 lg:ml-[-750px] items-start p-4" data-aos="fade-down"
+                 data-aos-easing="linear" data-aos-delay="200">
                 <Image     height={260} width={250} src={Img6} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
+                <p className="text-left text-[16px] text-[#666666] w-[20%]">
                     Join the leader in smallship cruising on the Great Lakes,
                 </p>
                 <p className="text-left">5.1k Review</p>

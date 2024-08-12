@@ -22,10 +22,10 @@ function Services(props) {
         <div className="w-[100%] h-screen text-center translate-y-72">
             <h3 className={"translate-y-[80px] text-[16px]"}>Eng yaxshi xizmatlar</h3>
             <h2 className={"translate-y-[85px] text-[36px]"}>Bizning xizmatlar</h2>
-            <p className={"w-[955px]  translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-full"}>
+            <p className={"w-[955px]  translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-full lg:translate-x-0 lg:w-full"}>
                 Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
             </p>
-            <div className="w-[100%] h-[600px] mt-2 flex  justify-center items-center gap-16 sm:flex-col sm:mt-32 sm:h-auto">
+            <div className="w-[100%] h-[600px] mt-2 flex  justify-center items-center gap-16 sm:flex-col sm:mt-32 sm:h-auto lg:w-full lg:flex-wrap lg:h-auto lg:mt-32 lg:mb-10">
                 <div
                     className={"w-[280px] h-[390px] border border-gray-200  rounded-[25px]   backdrop-[#FAFAFF] justify-center items-center"} data-aos="fade-right" data-aos-delay="200">
                     <img className={" w-[200px] h-[100px]  translate-y-[45px] } pl-[30%]"} src={Book} alt=""/>

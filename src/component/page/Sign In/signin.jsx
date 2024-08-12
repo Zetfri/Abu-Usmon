@@ -50,7 +50,7 @@ function Signin() {
                 <p className="text-[16px] text-center  ">Holiday</p>
                 <h2 className="text-[36px] text-center">Get In Touch</h2>
                 <div className="w-[950px] flex justify-center sm:w-full">
-                    <p className="w-[950px] text-center sm:w-[80%]">
+                    <p className="w-[950px] text-center sm:w-[80%] lg:w-full">
                         There was consensus, not surprisingly, that quality traditional travel agencies provide value
                         for
                         money. However, this was accompanied by a high level of concern that many consumers

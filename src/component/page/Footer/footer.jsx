@@ -7,8 +7,8 @@ import Instagram from "../../asstes/instagram.png"
 import Telegram from "../../asstes/telegram (1).png"
 import Facebook from "../../asstes/facebook.png"
 import Youtube from "../../asstes/youtube.png"
-import Uzb from "../../asstes/uzbekistan.png"
-import Sau from "../../asstes/flag.png"
+import Uzb from "../../asstes/flag (1).png"
+import Sau from "../../asstes/flag (2).png"
 
 function Footer(props) {
     return (
