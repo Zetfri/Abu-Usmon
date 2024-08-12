@@ -16,7 +16,7 @@ function Choose(props) {
                 <div className={"w-[50%] h-screen  sm:flex sm:flex-col sm:w-[95%] px-6 lg:flex lg:flex-col lg:w-full"}>
                     <div className={"translate-y-20 ml-32  sm:translate-y-[100px] sm:ml-0"}>
                         <h1 className={"text-[36px] w-[550px] sm:w-[200px]"}>Nima uchun bizni tanlaysiz?</h1>
-                        <p className={"w-[560px] text-[16px] sm:w-full"}>
+                        <p className={"w-auto text-[16px] sm:w-full"}>
                             Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
                         </p>
                         <div className={"w-full flex  items-center  pt-[50px] sm:h-auto " } data-aos="fade-down"  data-aos-delay="200">

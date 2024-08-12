@@ -78,7 +78,7 @@ function Footer(props) {
                         src="https://www.google.com/maps/place/21%C2%B026'24.1%22N+39%C2%B050'38.2%22E/@21.440016,39.84395,16z/data=!4m4!3m3!8m2!3d21.440016!4d39.84395?entry=ttu"
                         frameBorder="0"
 
-                        className={"w-[600px] h-[500px] mb-32 rounded-[15px] lg:w-full"}>
+                        className={"w-[600px] h-[500px] mb-32 rounded-[15px] sm:w-[95%] lg:w-full sm:mb-10"}>
 
 
                     </iframe>

@@ -68,17 +68,17 @@ function Signin() {
                 <p className="text-[16px] text-center">Holiday</p>
                 <h2 className="text-[36px] text-center">Get In Touch</h2>
                 <div className="w-[950px] flex justify-center sm:w-full lg:w-full lg:px-6">
-                    <p className="w-[950px] text-center sm:w-[80%]">
+                    <p className="w-[950px] text-center sm:w-full lg:w-full">
                         There was consensus, not surprisingly, that quality traditional travel agencies provide value
                         for
                         money. However, this was accompanied by a high level of concern that many consumers
                     </p>
                 </div>
                 <div className="w-full h-full flex items-center justify-center pt-40 sm:flex-col sm:pt-0 lg:pt-0 lg:flex-col">
-                    <div className="w-1/2 h-screen mt-[-20px] ml-24 sm:ml-0 sm:w-full lg:w-full ">
+                    <div className="w-1/2 h-screen mt-[-20px] ml-24 sm:ml-0 sm:w-full lg:w-full lg:ml-0">
                         <form
                             onSubmit={handleSubmit}
-                            className="w-[580px] h-[500px] flex-wrap pl-20 space-y-2 mt-[150px] sm:pl-0 sm:w-[100%] sm:space-y-[-8px] sm:mt-20 lg:space-y-[-8px]"
+                            className="w-[580px] h-[500px] flex-wrap pl-20 space-y-2 mt-[150px] sm:pl-0 sm:w-[100%]  sm:space-y-[-8px] sm:mt-32 lg:space-y-[-8px] lg:pl-0"
                         >
                             <input
                                 type="text"

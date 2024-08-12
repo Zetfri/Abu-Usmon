@@ -42,7 +42,7 @@ const MultiCarousel = () => {
     };
     return (
         <Carousel responsive={responsive}>
-            <div className="flex flex-col sm:ml-10 items-start p-4 lg:ml-20" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-10 items-start p-4 lg:ml-20 sm:w-full lg:w-full" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image  height={260} width={250} src={Img} alt="Trip to Thailand" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Thailand</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
@@ -63,7 +63,7 @@ const MultiCarousel = () => {
                     <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
                 </Modal>
             </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
+            <div className="flex flex-col sm:ml-2 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
                 <Image  height={260} width={250} src={Img1} alt="Trip to Bali" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
                 <h2 className="mt-4 text-left text-[20px]">Trip to Bali</h2>
                 <h2 className="text-left text-[20px] text-[#DB6300]"></h2>

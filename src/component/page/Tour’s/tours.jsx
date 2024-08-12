@@ -37,9 +37,9 @@ function Tours(props) {
     return (
         <div className="w-full h-screen sm:h-auto relative">
             <div className="w-full h-screen    flex justify-center items-center   sm:w-full sm:mb-10 sm:h-auto">
-                <img src={Left} alt="" className="mt-[-360px]  w-[100px] sm:ml-[-40px] sm:hidden"/>
-                <div className="w-[50%] h-screen sm:w-full sm:h-auto sm:mb-20 lg:w-full">
-                    <img src={Fon} alt="" className="pt-[0px] w-[620px]  pl-[100px] sm:pl-0 hidden sm:block sm:ml-5 lg:block lg:w-[70%] lg:ml-20 "
+                <img src={Left} alt="" className="mt-[-360px]  w-[100px] sm:ml-[-100px] sm:hidden"/>
+                <div className="w-[50%] h-screen sm:w-full  sm:h-auto sm:mb-20 lg:w-full">
+                    <img src={Fon} alt="" className="pt-[0px] w-[620px]  pl-[100px] sm:pl-0  hidden sm:block sm:ml-5 lg:block lg:w-[70%] lg:ml-20 "
                          data-aos="fade-right" data-aos-duration="400"/>
                     <div className="pl-[80px] pt-[-550px] sm:pl-10 ">
                         <h1 className="text-[50px] pt-[220px] pl-[50px] sm:pt-40 sm:text-[40px] sm:w-[250px]     sm:pl-0 sm:pr-32">
@@ -60,7 +60,7 @@ function Tours(props) {
                 </div>
                 <img src={Right} alt="" className="mt-[-450px]  w-[100px] sm:absolute sm:right-0 sm:hidden"/>
             </div>
-            <div className="w-[950px] h-[120px] rounded-md border border-[#CACACA] mt-[-80px] ml-[200px]  sm:flex sm:flex-col sm:w-[90%] sm:ml-4 sm:h-auto lg:w-[95%] lg:ml-5 lg:flex lg:flex-col lg:h-auto">
+            <div className="w-[950px] h-[120px] rounded-md border border-[#CACACA] mt-[-80px] ml-[200px]  sm:flex sm:flex-col sm:w-[90%] sm:ml-4 sm:h-auto lg:w-[95%] lg:ml-2 lg:flex lg:flex-col lg:h-auto">
                 <form onSubmit={handleSubmit} className="flex space-x-2 p-4 sm:flex-col lg:flex-col">
                     <div className="flex flex-col">
                         <label htmlFor="location" className="mb-2 ml-4">Ism</label>
@@ -99,7 +99,7 @@ function Tours(props) {
                         />
                     </div>
                     <button type="submit"
-                            className="bg-orange-500 text-white w-[150px] h-[40px] translate-x-8 mt-[35px] rounded-md lg:translate-x-1 lg:p-2 ">
+                            className="bg-orange-500 text-white w-[150px] h-[40px] translate-x-8 mt-[35px] rounded-md lg:translate-x-0  lg:p-2 ">
                         Yuborish
                     </button>
                 </form>

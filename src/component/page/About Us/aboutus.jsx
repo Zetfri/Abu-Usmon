@@ -8,19 +8,19 @@ import Signin from "../Sign In/signin.jsx";
 
 function Aboutus(props) {
     return (
-        <div className="w-[100%]  h-screen pt-20 sm:pt-0">
-            <div className=" w-[100%] h-screen flex  items-center justify-center  px-10 sm:h-auto lg:flex-col">
+        <div className="w-[100%]  h-screen pt-20 sm:pt-0 lg:w-full">
+            <div className=" w-[100%] h-screen flex  items-center justify-center  px-10 sm:h-auto lg:flex-col sm:px-2 sm:w-full">
                 <div className="w-[50%] h-screen  sm:w-full lg:w-full">
                     <img className={"w-20 ml-[-39px]"} src={Left1} alt=""/>
-                    <p className={"text-[16px] pr-[490px] ml-10 sm:pr-0 sm:ml-0 lg:pr-0 lg:ml-[-530px]"}>Easy and Fast</p>
-                    <h2 className={"text-[36px] pr-[100px] ml-10 sm:pr-0 sm:ml-0 lg:pr-0 lg:w-[500px]"}>Book Next Trip in 3 Easy Steps</h2>
-                    <p className={"w-[595px] pl-10 text-left sm:pl-4 sm:w-full sm:text-center "}>There was consensus, not surprisingly,
+                    <p className={"text-[16px] pr-[480px] ml-10 sm:pr-0 sm:ml-0 lg:pr-0 lg:ml-[-530px]"}>Easy and Fast</p>
+                    <h2 className={"text-[36px] pr-[100px] w-[600px] ml-10 sm:pr-0 sm:ml-0 lg:pr-0 lg:w-[500px] sm:w-full"}>Book Next Trip in 3 Easy Steps</h2>
+                    <p className={"w-[595px] pl-10 text-left sm:pl-4 sm:w-full sm:text-center sm:px-5"}>There was consensus, not surprisingly,
                         that quality traditional
                         travel agencies provide value for
                         money. However, this was accompanied by a high level of concern that many consumers</p>
 
                     <div
-                        className={"w-full flex  items-center  pt-[50px] sm:flex-col sm:justify-center sm:items-center sm:gap-1 lg:w-[900px]"}
+                        className={"w-full flex  items-center  pt-[50px] sm:flex-col sm:justify-center sm:items-center sm:gap-1 lg:w-full sm:w-full"}
                         data-aos="zoom-out-up" data-aos-duration="700">
                         <img src={Fleg} alt="" className={"pl-20 sm:pl-4 lg:pl-10"}/>
                         <h1 className={"-translate-y-6 ml-8  text-[20px] sm:translate-y-0 lg:mr-[-10px]"}>Choose Destionation</h1>
@@ -29,7 +29,7 @@ function Aboutus(props) {
                             traditional travel agencies</p>
                     </div>
                     <div
-                        className={"w-full flex  items-center  pt-[50px] sm:flex-col sm:justify-center sm:items-center sm:gap-1 lg:w-[900px]"}
+                        className={"w-full flex  items-center  pt-[50px] sm:flex-col sm:justify-center sm:items-center sm:gap-1lg:w-full sm:w-full"}
                         data-aos="zoom-out-up" data-aos-duration="900">
                         <img src={Fleg1} alt="" className={"pl-20 sm:pl-4 lg:pl-10"}/>
                         <h1 className={"-translate-y-6 ml-8  text-[20px] sm:translate-y-0 lg:mr-[-30px]"}>Make Payment</h1>
@@ -38,7 +38,7 @@ function Aboutus(props) {
                             traditional travel agencies</p>
                     </div>
                     <div
-                        className={"w-full flex  items-center  pt-[50px] sm:flex-col sm:justify-center sm:items-center sm:gap-1 lg:w-[900px]"}
+                        className={"w-full flex  items-center  pt-[50px] sm:flex-col sm:justify-center sm:items-center sm:gap-1 lg:w-full sm:w-full"}
                         data-aos="zoom-out-up" data-aos-duration="1100">
                         <img src={Fleg2} alt="" className={"pl-20 sm:pl-4 lg:pl-10"}/>
                         <h1 className={"-translate-y-6 ml-8  text-[20px] sm:translate-y-0 lg:mr-[-10px]"}>Reach Airport on Selected
@@ -49,7 +49,7 @@ function Aboutus(props) {
                     </div>
                 </div>
                 <div className="w-[50%] h-screen   justify-center  items-center flex lg:w-full lg:h-auto">
-                    <img src={Step} alt="" className={"mt-44 sm:hidden lg:mt-10 lg:mr-[-100px]"}/>
+                    <img src={Step} alt="" className={"mt-44 sm:hidden lg:mt-10 lg:mr-[100px]"}/>
                 </div>
             </div>
             <Signin/>
