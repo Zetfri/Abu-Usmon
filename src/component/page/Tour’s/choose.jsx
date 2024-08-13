@@ -9,14 +9,14 @@ import Services from "../Services/services.jsx";
 function Choose(props) {
     return (
         <div className="w-[100%] h-screen flex-col   bg-white   gap-[150px]  flex  ">
-            <div className="flex  w-[100%] h-screen bg-white sm:w-full  lg:w-full lg:flex-col ">
-                <div className={"w-[50%]  h-screen  sm:hidden lg:w-[90%]"}>
-                    <img src={Car} alt="" className={"w-[90%] translate-x-20 pt-[100px] sm:hidden mt-8"}/>
+            <div className="flex  w-[100%] h-screen bg-white sm:w-full mb-14 sm:mb-0 ">
+                <div className={"w-[50%]  h-screen  sm:hidden "}>
+                    <img src={Car} alt="" className={"w-[90%] translate-x-10 pt-[100px] sm:hidden mt-8"}/>
                 </div>
-                <div className={"w-[50%] h-screen  sm:flex sm:flex-col sm:w-[95%] px-6 lg:flex lg:flex-col lg:w-full"}>
-                    <div className={"translate-y-20 ml-32  sm:translate-y-[100px] sm:ml-0"}>
+                <div className={"w-[50%] h-screen  sm:flex sm:flex-col sm:w-[95%] px-6 "}>
+                    <div className={"translate-y-20 ml-20  sm:translate-y-[100px] sm:ml-0 sm:mb-0"}>
                         <h1 className={"text-[36px] w-[550px] sm:w-[350px] sm:text-[25px]"}>Nima uchun bizni tanlaysiz?</h1>
-                        <p className={"w-auto text-[16px] sm:w-full sm:mt-4 lg:w-full " }>
+                        <p className={"w-auto text-[16px] sm:w-full sm:mt-4 " }>
                             Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
                         </p>
                         <div className={"w-full flex  items-center  pt-[50px] sm:h-auto " } data-aos="fade-down"  data-aos-delay="200">

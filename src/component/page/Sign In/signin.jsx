@@ -64,21 +64,21 @@ function Signin() {
 
     return (
         <div>
-            <div className="w-full h-screen pt-20 flex flex-col items-center sm:mt-[600px]">
+            <div className="w-full h-screen pt-20 flex flex-col items-center sm:mt-[300px] sm:ml-[-19px]">
                 <p className="text-[16px] text-center sm:mt-[-300px]">Holiday</p>
                 <h2 className="text-[36px] text-center">Get In Touch</h2>
                 <div className="w-[950px] flex justify-center sm:w-full lg:w-full lg:px-6">
-                    <p className="w-[950px] text-center sm:w-full lg:w-full">
+                    <p className="w-[950px] text-center sm:w-full lg:w-full sm:ml-3">
                         There was consensus, not surprisingly, that quality traditional travel agencies provide value
                         for
                         money. However, this was accompanied by a high level of concern that many consumers
                     </p>
                 </div>
                 <div className="w-full h-full flex items-center justify-center pt-40 sm:flex-col sm:pt-0 lg:pt-0 lg:flex-col">
-                    <div className="w-1/2 h-screen mt-[-20px] ml-24   sm:w-full lg:w-full sm:mt-20 sm:ml-0 lg:ml-0 ">
+                    <div className="w-1/2 h-screen mt-[-20px] ml-24   sm:w-full lg:w-full sm:mt-20 sm:ml-10 lg:ml-60 ">
                         <form
                             onSubmit={handleSubmit}
-                            className="w-[580px] h-[500px] flex-wrap pl-20 space-y-2 mt-[150px] sm:pl-0 sm:w-[100%]  sm:space-y-[-8px] sm:mt-32 lg:space-y-[-8px] lg:pl-0"
+                            className="w-[580px] h-[500px] flex-wrap pl-20 space-y-[-18px] mt-[80px] sm:pl-0 sm:w-[100%]  sm:space-y-[-8px] sm:mt-32 lg:space-y-[-8px] lg:pl-0"
                         >
                             <input
                                 type="text"
@@ -88,7 +88,7 @@ function Signin() {
                                 onChange={handleChange}
                                 className="w-[450px] h-[50px] border border-gray-300 p-2 rounded-md sm:w-[90%]"
                                 data-aos="fade-down"
-                                data-aos-delay="200"
+                                data-aos-delay="100"
                             />
                             <br/>
                             <br/>

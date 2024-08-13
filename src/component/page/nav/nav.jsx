@@ -63,7 +63,7 @@ function Nav() {
 
     return (
         <div className="w-full flex items-center justify-center gap-7 pt-7 sm:gap-2">
-            <div className="mr-[550px] sm:mr-0 lg:mr-0">
+            <div className="mr-[550px] sm:mr-0">
                 <Link to="/">
                     <img className="pl-[80px] sm:pl-0 sm:w-[100px] sm:mx-6" src={Logo} alt="Logo" />
                 </Link>

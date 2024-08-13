@@ -13,9 +13,9 @@ import Sau from "../../asstes/flag.png"
 function Footer(props) {
     return (
         <div>
-            <div className={"w-full h-[640px] bg-[#050402] mt-32 flex px-10 justify-center items-center sm:flex-col sm:h-auto sm:px-2 lg:flex-col lg:h-auto"}>
-                <div className={"w-[50%]  h-auto sm:w-full lg:w-full"}>
-                    <div className={"w-[620px] h-[55px] bg-orange-500 flex justify-center items-center gap-20 rounded-[15px] sm:w-full sm:h-[70px] sm:gap-10 mt-14 lg:w-full"}>
+            <div className={"w-full h-[640px] bg-[#050402] mt-32 flex px-10 justify-center items-center sm:flex-col sm:h-auto sm:px-2"}>
+                <div className={"w-[50%]  h-auto sm:w-full "}>
+                    <div className={"w-[620px] h-[55px] bg-orange-500 flex justify-center items-center gap-20 rounded-[15px] sm:w-full  sm:h-[70px] sm:gap-10 mt-14 "}>
                         <a href="https://t.me/ABU_USMON_Haj"><img src={Telegram} alt="" className={"w-[42px]"} data-aos="fade-up"  data-aos-delay="200"/></a>
                         <a href=""><img src={Instagram} alt="" className={"w-[42px]"} data-aos="fade-up" data-aos-delay="300"/></a>
                         <a href=""><img src={Facebook} alt="" className={"w-[42px]"}  data-aos="fade-up"  data-aos-delay="400"/></a>
@@ -73,12 +73,12 @@ function Footer(props) {
                         </div>
                     </div>
                 </div>
-                <div className={"flex justify-center w-[50%] h-full items-center pt-[180px] sm:pt-10 lg:w-full"}>
+                <div className={"flex justify-center w-[50%] h-full items-center pt-[180px] sm:pt-10 sm:w-full"}>
                     <iframe
                         src="https://www.google.com/maps/place/21%C2%B026'24.1%22N+39%C2%B050'38.2%22E/@21.440016,39.84395,16z/data=!4m4!3m3!8m2!3d21.440016!4d39.84395?entry=ttu"
                         frameBorder="0"
 
-                        className={"w-[600px] h-[500px] mb-32 rounded-[15px] sm:w-[95%] lg:w-full sm:mb-10"}>
+                        className={"w-[600px] h-[500px] mb-32 rounded-[15px] sm:w-[95%]  sm:mb-10"}>
 
 
                     </iframe>
