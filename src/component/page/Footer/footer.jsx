@@ -48,9 +48,9 @@ function Footer(props) {
                                     <img src={Uzb} alt="" className={"w-[30px] h-[30px]"}/>
                                     📞+99891 322 07 87
                                 </a>
-                                <a href="Tel:+99897 386 07 87." className={"flex w-auto gap-2 justify-center items-center"}>
+                                <a href="Tel:+99897 386 07 87" className={"flex w-auto gap-2 justify-center items-center"}>
                                     <img src={Uzb} alt="" className={"w-[30px] h-[30px]"}/>
-                                    📞+99897 386 07 87.
+                                    📞+99897 386 07 87
                                 </a>
                                 <a href="Tel:+966 50 905 3786" className={"flex w-auto gap-2 justify-center items-center"}>
                                     <img src={Sau} alt="" className={"w-[30px] h-[30px]"}/>

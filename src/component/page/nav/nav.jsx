@@ -62,10 +62,10 @@ function Nav() {
     };
 
     return (
-        <div className="w-full flex items-center justify-center gap-7 pt-7 sm:gap-2 lg:gap-10">
+        <div className="w-full flex items-center justify-center gap-7 pt-7 sm:gap-2">
             <div className="mr-[550px] sm:mr-0 lg:mr-0">
                 <Link to="/">
-                    <img className="pl-[80px] sm:pl-0 sm:w-[100px] sm:mx-6 lg:ml-[-30px]" src={Logo} alt="Logo" />
+                    <img className="pl-[80px] sm:pl-0 sm:w-[100px] sm:mx-6" src={Logo} alt="Logo" />
                 </Link>
             </div>
             <div className="flex gap-10 sm:hidden">

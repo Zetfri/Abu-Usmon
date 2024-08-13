@@ -8,9 +8,11 @@ import Signin from "../Sign In/signin.jsx";
 
 function Aboutus(props) {
     return (
+        <>
+        
         <div className="w-[100%]  h-screen pt-20 sm:pt-0 lg:w-full">
             <div className=" w-[100%] h-screen flex  items-center justify-center  px-10 sm:h-auto lg:flex-col sm:px-2 sm:w-full">
-                <div className="w-[50%] h-screen  sm:w-full lg:w-full">
+                <div className="w-[50%] h-screen  sm:w-full sm:ml-0  lg:w-full lg:ml-0">
                     <img className={"w-20 ml-[-39px]"} src={Left1} alt=""/>
                     <p className={"text-[16px] pr-[480px] ml-10 sm:pr-0 sm:ml-0 lg:pr-0 lg:ml-[-530px]"}>Easy and Fast</p>
                     <h2 className={"text-[36px] pr-[100px] w-[600px] ml-10 sm:pr-0 sm:ml-0 lg:pr-0 lg:w-[500px] sm:w-full"}>Book Next Trip in 3 Easy Steps</h2>
@@ -48,12 +50,17 @@ function Aboutus(props) {
                             traditional travel agencies</p>
                     </div>
                 </div>
-                <div className="w-[50%] h-screen   justify-center  items-center flex lg:w-full lg:h-auto">
-                    <img src={Step} alt="" className={"mt-44 sm:hidden lg:mt-10 lg:mr-[100px]"}/>
+                <div className="w-[50%] h-screen  lg:ml-10  justify-center  items-center flex lg:w-full lg:h-auto">
+                    <img src={Step} alt="" className={"mt-44 sm:hidden lg:mt-5 lg:mb-40 sm:mb-0 "}/>
                 </div>
+                <br/>
             </div>
-            <Signin/>
+            <br/>
+            <br/>
+            <br/>
         </div>
+        <Signin/>
+        </>
     );
 }
 

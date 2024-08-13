@@ -63,14 +63,14 @@ function Services(props) {
     };
 
     return (
-        <div className="w-[100%] h-screen text-center translate-y-[450px] lg:h-auto ">
-            <h3 className={"translate-y-[80px] text-[16px]"}>Eng yaxshi xizmatlar</h3>
+        <div className="w-[100%] h-screen text-center translate-y-72">
+            <h3 className={"translate-y-[80px] text-[16px] "}>Eng yaxshi xizmatlar</h3>
             <h2 className={"translate-y-[85px] text-[36px]"}>Bizning xizmatlar</h2>
-            <p className={"w-[955px] translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-full lg:w-full lg:translate-x-0 lg:px-0"}>
+            <p className={"w-[955px] translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-full lg:translate-x-0 lg:w-full lg:px-2"}>
                 Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq,
                 bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
             </p>
-            <div className="w-[100%] h-[600px] mt-2 flex justify-center items-center gap-16 sm:flex-col sm:mt-32 sm:h-auto lg:w-full lg:flex-wrap lg:h-auto lg:mt-32 lg:mb-20">
+            <div className="w-[100%] h-[600px] mt-2 flex justify-center items-center gap-16 sm:flex-col sm:mt-32 sm:h-auto lg:flex-wrap lg:h-auto lg:mt-32 lg:mb-20 sm:mb-0">
                 {/* Service Cards */}
                 {[
                     { img: Book, title: 'Book Hotel', desc: 'In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies' },

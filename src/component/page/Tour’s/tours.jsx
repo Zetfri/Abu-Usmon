@@ -33,7 +33,7 @@ function Tours(props) {
             alert('Failed to send message.');
         }
     };
-``
+    ``
     return (
         <div className="w-full h-screen sm:h-auto relative">
             <div className="w-full h-screen    flex justify-center items-center   sm:w-full sm:mb-10 sm:h-auto">
@@ -56,7 +56,7 @@ function Tours(props) {
                     </div>
                 </div>
                 <div className="w-[50%] h-screen sm:w-full sm:h-auto lg:w-full">
-                        <img src={Fon} alt="" className="pt-[0px] w-[620px]  pl-[100px] sm:pl-0 sm:hidden lg:hidden lg:w-0 lg:h-0" data-aos="fade-right" data-aos-duration="400"/>
+                    <img src={Fon} alt="" className="pt-[0px] w-[620px]  pl-[100px] sm:pl-0 sm:hidden lg:hidden lg:w-0 lg:h-0" data-aos="fade-right" data-aos-duration="400"/>
                 </div>
                 <img src={Right} alt="" className="mt-[-450px]  w-[100px] sm:absolute sm:right-0 sm:hidden"/>
             </div>
@@ -70,7 +70,7 @@ function Tours(props) {
                             value={location}
                             onChange={(e) => setLocation(e.target.value)}
                             className="border p-2 rounded-md sm:w-[310px] ml-[0px]"
-                            required 
+                            required
                             placehoder={"Ism kiritin"}
                         />
                     </div>

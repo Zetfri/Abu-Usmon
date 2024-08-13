@@ -15,14 +15,14 @@ function Choose(props) {
                 </div>
                 <div className={"w-[50%] h-screen  sm:flex sm:flex-col sm:w-[95%] px-6 lg:flex lg:flex-col lg:w-full"}>
                     <div className={"translate-y-20 ml-32  sm:translate-y-[100px] sm:ml-0"}>
-                        <h1 className={"text-[36px] w-[550px] sm:w-[200px]"}>Nima uchun bizni tanlaysiz?</h1>
-                        <p className={"w-auto text-[16px] sm:w-full"}>
+                        <h1 className={"text-[36px] w-[550px] sm:w-[350px] sm:text-[25px]"}>Nima uchun bizni tanlaysiz?</h1>
+                        <p className={"w-auto text-[16px] sm:w-full sm:mt-4 lg:w-full " }>
                             Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
                         </p>
                         <div className={"w-full flex  items-center  pt-[50px] sm:h-auto " } data-aos="fade-down"  data-aos-delay="200">
                             <img src={Airport} alt="" className={"sm:h-[80px]"}/>
                             <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Airport Car</h1>
-                            <p className={"w-[300px] pt-6 ml-[-98px] sm:ml-[-180px] sm:mt-4 sm:w-[80%]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
+                            <p className={"w-[300px] pt-6 ml-[-98px] sm:ml-[-180px] sm:mt-4 sm:w-[88%]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
                         </div>
                         <div className={"w-full flex   items-center  pt-[50px]  sm:h-auto " } data-aos="fade-down"  data-aos-delay="300">
                             <img src={Airport1} alt="" className={"sm:h-[80px]"}/>
@@ -38,7 +38,7 @@ function Choose(props) {
                             <img src={Airport2} alt="" className={"sm:h-[80px]"}/>
                             <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Special Discount</h1>
                             <p className={"w-[300px] pt-6 ml-[-148px] sm:mt-6 sm:w-[80%]  sm:ml-[-180px]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
-                         </div>
+                        </div>
                         <div className={"w-full flex  items-center  pt-[50px] sm:h-auto" } data-aos="fade-down"  data-aos-delay="500">
                             <img src={Airport3} alt="" className={"sm:h-[80px]"}/>
                             <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Tour Guide</h1>
