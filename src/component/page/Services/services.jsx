@@ -66,12 +66,12 @@ function Services(props) {
         <div className="w-[100%] h-screen text-center translate-y-72 mt-[-350px] sm:mt-[20px] ">
             <h3 className={"translate-y-[80px] text-[16px] sm:w-[200px] sm:ml-[100px]"}>Eng yaxshi xizmatlar</h3>
             <h2 className={"translate-y-[85px] text-[36px] sm:w-[300px] sm:ml-[50px]"}>Bizning xizmatlar</h2>
-            <p className={"w-[955px] translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-full sm:px-4"}>
+            <p className={"w-[955px] translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-[90%] sm:ml-[15px]"}>
                 Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq,
                 bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
             </p>
             <div
-                className="w-[100%] h-[600px] mt-2 flex justify-center items-center gap-16 sm:w-full sm:flex-col sm:mt-32 sm:h-auto sm:px-10">
+                className="w-[100%] h-[600px] mt-2 flex justify-center items-center gap-16 sm:flex-col sm:mt-32 sm:h-auto">
                 {/* Service Cards */}
                 {[
                     {
@@ -97,7 +97,7 @@ function Services(props) {
                 ].map((service, index) => (
                     <div
                         key={index}
-                        className={"w-[280px] h-[390px] border border-gray-200 rounded-[25px] backdrop-[#FAFAFF] flex flex-col justify-center items-center sm:w-full "}
+                        className={"w-[280px] h-[390px] border border-gray-200 rounded-[25px] backdrop-[#FAFAFF] flex flex-col justify-center items-center"}
                         data-aos="fade-right" data-aos-delay={(index + 1) * 100}
                     >
                         <img className={"w-[100px] h-[75px]"} src={service.img} alt={service.title}/>

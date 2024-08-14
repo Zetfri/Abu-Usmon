@@ -24,7 +24,7 @@ import Img022 from"../../asstes/umra/photo_3_2024-08-10_18-07-10.jpg";
 // import Img023 from"../../asstes/umra/photo_1_2024-08-10_18-07-10.jpg";
 import Img024 from"../../asstes/umra/photo_11_2024-08-10_18-07-10.jpg";
 import Img025 from"../../asstes/umra/photo_6_2024-08-10_18-07-10.jpg";
-
+import Video from "../../asstes/2024-08-14_22-24-42.mp4"
 import { Image } from 'antd';
 import Footer from "../Footer/footer.jsx";
 
@@ -56,8 +56,42 @@ const App = () => (
             <Image width={300} height={300} src={Img022} />
             {/*<Image width={300} height={300} src={Img023} />*/}
             <Image width={300} height={300} src={Img024} />
-            <Image width={300} height={300} src={Img025} />
-
+            <Image width={300} height={300} src={Img025} /> 
+      
+             <Image
+    width={200}
+    preview={{
+      destroyOnClose: true,
+      imageRender: () => (
+        <video
+          muted
+          width="80%"
+          height="50%"
+          controls
+          src={Video}
+        />
+      ),
+      toolbarRender: () => null,
+    }}
+    src={Img01}
+  />
+             <Image
+    width={200}
+    preview={{
+      destroyOnClose: true,
+      imageRender: () => (
+        <video
+          muted
+          width="100%"
+          controls
+          type="video/mp4"
+          src="https://mdn.alipayobjects.com/huamei_iwk9zp/afts/file/A*uYT7SZwhJnUAAAAAAAAAAAAADgCCAQ"
+        />
+      ),
+      toolbarRender: () => null,
+    }}
+    src={Img010}
+  />
         </div>
         </div>
         <Footer/>
