@@ -5,13 +5,8 @@ import Aboutus from "../About Us/aboutus.jsx";
 function Paceg(props) {
     return (
         <div>
-            <p className={"text-[15px] sm:mt-32 sm:w-[50%] sm:ml-[100px]"}>Recomanded Packages</p>
-            <h2 className={"text-[36px] sm:w-[60%] sm:text-[30px] sm:ml-[80px]"}>Best Value Trips</h2>
-            <p className={"text-[16px] sm:w-[85%] w-[800px] ml-[300px] lg:ml-[50px]  lg:w-[700px] sm:ml-5 sm:flex  sm:gap-[-100px]"}>There was consensus, not surprisingly, that quality
-                traditional travel agencies
-                provide
-                value for money. However, this was accompanied by a high level of concern that many
-                consumers</p>
+            <p className={"text-[36px] font-bold sm:mt-32 sm:w-[100%] sm:ml-[0px]"}>Maka Madina ziyoratlari </p>
+         
             <br/>
             <br/>
             <br/>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Button, Modal } from 'antd';
-import Img from "../../asstes/travael.jpg";
-import Img1 from "../../asstes/travael1.jpg";
-import Img2 from "../../asstes/travel2.jpg";
+import { Button, Modal, message } from 'antd';
+import Img from "../../asstes/u`mra/photo_2024-08-09_20-43-00 1.png";
+import Img1 from "../../asstes/u`mra/photo_2024-08-15_18-04-16 1.png";
+import Img2 from "../../asstes/u`mra/photo_2024-08-09_20-36-22 1.png";
 import Img3 from "../../asstes/travel3.jpg";
-import Img4 from "../../asstes/umra/photo_20_2024-08-10_18-07-10.jpg";
-import Img5 from "../../asstes/umra/photo_18_2024-08-10_18-07-10.jpg";
-import Img6 from "../../asstes/umra/photo_14_2024-08-10_18-07-10.jpg";
+// import Img4 from "../../asstes/umra/photo_20_2024-08-10_18-07-10.jpg";
+// import Img5 from "../../asstes/umra/photo_18_2024-08-10_18-07-10.jpg";
+// import Img6 from "../../asstes/umra/photo_14_2024-08-10_18-07-10.jpg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Image } from 'antd';
@@ -30,157 +30,177 @@ const MultiCarousel = () => {
             items: 1,
         },
     };
+
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const showModal = () => {
+    const [currentTrip, setCurrentTrip] = useState({});
+    const [userName, setUserName] = useState('');
+    const [userNumber, setUserNumber] = useState('');
+
+    const sendToTelegram = (tripName) => {
+        const botToken = '7485625468:AAGHeLepMjWactUjD0OPRSefD_8srs_r02o';
+        const chatId = '-1002214508831';
+        const message = `Trip Name: ${tripName}\nName: ${userName}\nPhone Number: ${userNumber}`;
+
+        fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message,
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Message sent:", data);
+            })
+            .catch(error => {
+                console.error("Error sending message:", error);
+            });
+    };
+
+    const showModal = (trip) => {
+        setCurrentTrip(trip);
         setIsModalOpen(true);
     };
+
     const handleOk = () => {
-        setIsModalOpen(false);
+        if (userName.trim() && userNumber.trim()) {
+            sendToTelegram(currentTrip.name);
+            message.success('Message sent successfully!');
+            setUserName(''); // Clear form
+            setUserNumber(''); // Clear form
+            setIsModalOpen(false); // Close modal
+        } else {
+            message.error('Please fill in all the fields.');
+        }
     };
+
     const handleCancel = () => {
         setIsModalOpen(false);
+        setUserName(''); // Clear form
+        setUserNumber(''); // Clear form
     };
+
+    const trips = [
+        { name: "Masjidul Haram", img: Img, p: "Masjidul haramga 11-kun umra amallari" },
+        { name: "Qizil dengiz", img: Img1, p: "Qizildengiz sayohati          " },
+        { name: "Madina munavara", img: Img2 , p: "Qubo masjidi                      "},
+        { name: "Manar Al-Tavhit 2", img: Img3 ,p: "Hojilarimizdan foto lavha                     "},
+    ];
+
     return (
-        <Carousel responsive={responsive}>
-            <div className="flex flex-col sm:ml-[50px] items-start p-4 lg:ml-20 sm:w-full lg:w-full" >
-                <Image  height={260} width={250} src={Img} alt="Trip to Thailand" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
-                <h2 className="mt-4 text-left text-[20px]">Trip to Thailand</h2>
-                <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
-                    Join the leader in smallship cruising on the Great Lakes,
-                </p>
-                
-                <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
-                    View Details
-                </Button>
-                <Modal title="Trip to Thailand" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
-                    <img src={Img} alt="" className={"mx-auto mb-4"}/>
-                    <h2 className={"text-[18px] translate-y-[-12px] text-center "}>Trip to Thailand</h2>
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
-                </Modal>
-            </div>
-            <div className="flex flex-col sm:ml-2 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
-                <Image  height={260} width={250} src={Img1} alt="Trip to Bali" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
-                <h2 className="mt-4 text-left text-[20px]">Trip to Bali</h2>
-                <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%] lg:w-[50%]">
-                    Join the leader in smallship cruising on the Great Lakes,
-                </p>
-               
-                <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
-                    View Details
-                </Button>
-                <Modal title="Trip to Bali" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
-                    <img src={Img1} alt="" className={"mx-auto mb-4"}/>
-                    <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Bali</h2>
-                   
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
-                </Modal>
-            </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4 " data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
-                <Image  height={260} width={250} src={Img2} alt="Trip to Maldives" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
-                <h2 className="mt-4 text-left text-[20px]">Trip to Maldives</h2>
-                <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
-                    Join the leader in smallship cruising on the Great Lakes,
-                </p>
-               
-                <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
-                    View Details
-                </Button>
-                <Modal title="Trip to Maldives" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
-                    <img src={Img2} alt="" className={"mx-auto mb-4"}/>
-                    <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Maldives</h2>
-              
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
-                </Modal>
-            </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
-                <Image  height={260} width={250} src={Img3} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
-                <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
-                <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
-                    Join the leader in smallship cruising on the Great Lakes,
-                </p>
-       
-                <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
-                    View Details
-                </Button>
-                <Modal title="Trip to Japan" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
-                    <img src={Img3} alt="" className={"mx-auto mb-4"}/>
-                    <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Japan</h2>
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
-                </Modal>
-            </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
-                <Image  height={260} width={250} src={Img4} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
-                <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
-                <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
-                    Join the leader in smallship cruising on the Great Lakes,
-                </p>
-                <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
-                    View Details
-                </Button>
-                <Modal title="Trip to Japan" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
-                    <img src={Img4} alt="" className={"mx-auto mb-4"}/>
-                    <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Japan</h2>
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
-                </Modal>
-            </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
-                <Image     height={260} width={250} src={Img5} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
-                <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
-                <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
-                    Join the leader in smallship cruising on the Great Lakes,
-                </p>
-                <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
-                    View Details
-                </Button>
-                <Modal title="Trip to Japan" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
-                    <img src={Img5} alt="" className={"mx-auto mb-4"}/>
-                    <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Japan</h2>
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
-                </Modal>
-            </div>
-            <div className="flex flex-col sm:ml-10 items-start p-4" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="200">
-                <Image     height={260} width={250} src={Img6} alt="Trip to Japan" className="w-[280px] h-[200px] rounded-[10px] object-cover" />
-                <h2 className="mt-4 text-left text-[20px]">Trip to Japan</h2>
-                <h2 className="text-left text-[20px] text-[#DB6300]"></h2>
-                <p className="text-left text-[16px] text-[#666666] w-[70%]">
-                    Join the leader in smallship cruising on the Great Lakes,
-                </p>
-                <Button onClick={showModal} className={"w-[170px] h-[50px] ml-[-2px] mt-2 rounded-[11px] bg-[#EEAA2B] text-white"}>
-                    View Details
-                </Button>
-                <Modal title="Trip to Japan" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center',alignItems: 'center', gap: '10px'}}>
-                    <img src={Img6} alt="" className={"mx-auto mb-4"}/>
-                    <h2 className={"text-[26px] translate-y-[-12px] text-center "}>Trip to Japan</h2>
-                    <p className={"text-center "}>Join the leader in smallship cruising on the Great Lakes,</p>
-                    <input type="text" name="" id="" placeholder={"Enter your name..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <input type="text" name="" id="" placeholder={"Enter your number..."} className={"my-2 w-[300px] border p-2 rounded-[5px]"}/><br/>
-                    <button className={"w-[180px] translate-y-[20px]  h-[40px] bg-white   rounded-[10px]  text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}>Yuborish</button>
-                </Modal>
-            </div>
+        <Carousel
+            responsive={responsive}
+            customLeftArrow={
+                <button
+                    className="custom-left-arrow"
+                    style={{
+                        position: 'absolute',
+                        left: '10px',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        backgroundColor: '#EEAA2B',
+                        border: 'none',
+                        borderRadius: '50%',
+                        width: '50px',
+                        height: '50px',
+                        color: 'white',
+                        fontSize: '20px',
+                        cursor: 'pointer',
+                        zIndex: 2,
+                    }}
+                >
+                    ←
+                </button>
+            }
+            customRightArrow={
+                <button
+                    className="custom-right-arrow "
+                    style={{
+                        position: 'absolute',
+                        right: '10px',
+                        top: '50%',
+                        transform: 'translateY(-50%)',
+                        backgroundColor: '#EEAA2B',
+                        border: 'none',
+                        borderRadius: '50%',
+                        width: '50px',
+                        height: '50px',
+                        color: 'white',
+                        fontSize: '20px',
+                        cursor: 'pointer',
+                        zIndex: 2,
+                    }}
+                >
+                    →
+                </button>
+            }
+            className='flex justify-center items-center sm:pl-['
+        >
+            {trips.map((trip, index) => (
+                <div key={index} className="flex h-[450px]   flex-col items-start p-4 sm:ml-[50px] lg:ml-20 sm:w-full lg:w-full">
+                    <Image height={260} width={250} src={trip.img} alt={trip.name} className="w-[280px] h-[200px] rounded-lg object-cover shadow-lg" />
+                    <h2 className="mt-4 text-left text-xl font-semibold">{trip.name}</h2>
+                    <p className="text-left text-base text-gray-600 w-[70%]">
+                        {trip.p}
+                    </p>
+                    <Button onClick={() => showModal(trip)} className="w-[170px] h-[50px] mt-2 rounded-lg bg-[#EEAA2B] text-white shadow-md hover:bg-[#d99926]">
+                        View Details
+                    </Button>
+                    <Modal
+                        title={null}
+                        open={isModalOpen}
+                        onOk={handleOk}
+                        onCancel={handleCancel}
+                        footer={null}
+                        centered
+                        style={{
+                            width: '90%',
+                            maxWidth: '600px',
+                            padding: '20px',
+                        }}
+                        bodyStyle={{
+                            padding: '20px',
+                            borderRadius: '10px',
+                            backgroundColor: '#FDFDFD', // Set the background color
+                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                        }}
+                        wrapClassName="custom-modal-overlay"
+                    >
+                        <div className="flex flex-col items-center">
+                            <img
+                                src={currentTrip.img}
+                                alt=""
+                                className="w-[80%] max-w-md h-[300px] object-cover rounded-lg shadow-lg"
+                            />
+                            <h2 className="text-xl font-semibold mt-4 mb-2">{currentTrip.name}</h2>
+                            <p className="text-center text-base text-gray-600 mb-4">Join the leader in smallship cruising on the Great Lakes,</p>
+                            <input
+                                type="text"
+                                placeholder="Enter your name..."
+                                value={userName}
+                                onChange={(e) => setUserName(e.target.value)}
+                                className="my-2 w-full max-w-md border border-gray-300 p-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#EEAA2B]"
+                            />
+                            <input
+                                type="text"
+                                placeholder="Enter your number..."
+                                value={userNumber}
+                                onChange={(e) => setUserNumber(e.target.value)}
+                                className="my-2 w-full max-w-md border border-gray-300 p-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#EEAA2B]"
+                            />
+                            <button
+                                onClick={handleOk}
+                                className="w-full max-w-md h-[40px] mt-4 bg-[#EEAA2B] text-white rounded-lg shadow-md hover:bg-[#d99926] transition duration-300"
+                            >
+                                Yuborish
+                            </button>
+                        </div>
+                    </Modal>
+                </div>
+            ))}
         </Carousel>
     );
 };

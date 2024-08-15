@@ -64,14 +64,11 @@ function Signin() {
 
     return (
         <div>
-            <div className="w-full h-screen pt-20 flex flex-col items-center sm:mt-[300px] sm:ml-[-1px] sm:w-[90%] ">
-                <p className="text-[16px] text-center sm:mt-[-300px]">Holiday</p>
-                <h2 className="text-[36px] text-center sm:text-[25px]">Get In Touch</h2>
+            <div className="w-full h-screen pt-20 mb-12 sm:mb-44 flex flex-col items-center  sm:ml-[-1px] sm:w-[90%] ">
+                <h2 className="text-[36px] text-center sm:text-[25px]">Aloqa qiling</h2>
                 <div className="w-[950px] flex justify-center sm:w-full lg:w-full lg:px-6">
                     <p className="w-[950px] text-center sm:w-full lg:w-full sm:ml-3">
-                        There was consensus, not surprisingly, that quality traditional travel agencies provide value
-                        for
-                        money. However, this was accompanied by a high level of concern that many consumers
+                        Sifatli  sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
                     </p>
                 </div>
                 <div className="w-full h-full flex items-center justify-center pt-40 sm:flex-col sm:pt-0 lg:pt-0 lg:flex-col">

@@ -43,15 +43,13 @@ function Tours(props) {
                          data-aos="fade-right" data-aos-duration="400"/>
                     <div className="pl-[80px] pt-[-550px] sm:pl-10 ">
                         <h1 className="text-[50px] pt-[160px] pl-[-10px] sm:pt-40 sm:text-[27px] sm:w-[350px] ml-12   sm:ml-[-1px]   sm:pl-0 sm:pr-32">
-                            Baxt <span className="text-[#DB6300]">Sayohatdir</span>
+                            Xaj va<span className="text-[#DB6300]">  Umra  </span>
                         </h1>
                         <h3 className="text-[25px] w-[580px] pl-[50px] pt-4 sm:pl-0 sm:w-[300px]">
-                            No matter where in the world you want to go, we can help get you there
+                            Ziyorati   2024-2025
                         </h3>
                         <p className="text-[16px] w-[560px] pt-10 text-[#666666] pl-[50px] sm:pl-0  sm:w-[300px]">
-                            Travel Agency Threats and Opportunities. The Perspective of Successful Owners. Join the
-                            leader in small-ship cruising on the Great Lakes, and enjoy fabulous inclusions such as a
-                            pre-voyage hotel.
+                            UMRA ziyorati uchun qabullar davom etmoqda adashmang biz bilan barchasi ishonchli uz joyingizni band qiling joylar soni CHEGARALANGAN
                         </p>
                     </div>
                 </div>
@@ -63,7 +61,7 @@ function Tours(props) {
             <br/>
             <br/>
             <br/>
-            <div className="w-[950px] h-[120px] rounded-md border border-[#CACACA] mt-[-152px] ml-[200px]  sm:flex sm:flex-col sm:w-[90%] sm:ml-4 sm:h-auto lg:w-[95%] lg:ml-2 lg:flex lg:flex-col lg:h-auto">
+            <div className="w-[950px] h-[120px] rounded-md border border-[#CACACA] mt-[-252px] ml-[200px]  sm:flex sm:flex-col sm:w-[90%] sm:mt-[-150px] sm:ml-4 sm:h-auto lg:w-[95%] lg:ml-2 lg:flex lg:flex-col lg:h-auto">
                 <form onSubmit={handleSubmit} className="flex space-x-2 p-4 sm:flex-col lg:flex-col">
                     <div className="flex flex-col">
                         <label htmlFor="location" className="mb-2 ml-4">Ism</label>

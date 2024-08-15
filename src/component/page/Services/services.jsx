@@ -63,7 +63,7 @@ function Services(props) {
     };
 
     return (
-        <div className="w-[100%] h-screen text-center translate-y-72 mt-[-350px] sm:mt-[20px] ">
+        <div className="w-[100%] h-screen text-center translate-y-72 mt-[-350px] sm:mt-[20px] sm:translate-y-[-100px]">
             <h3 className={"translate-y-[80px] text-[16px] sm:w-[200px] sm:ml-[100px]"}>Eng yaxshi xizmatlar</h3>
             <h2 className={"translate-y-[85px] text-[36px] sm:w-[300px] sm:ml-[50px]"}>Bizning xizmatlar</h2>
             <p className={"w-[955px] translate-x-[260px] translate-y-[85px] text-[16px] text-[#666666] sm:translate-x-0 sm:w-[90%] sm:ml-[15px]"}>
@@ -76,28 +76,29 @@ function Services(props) {
                 {[
                     {
                         img: Book,
-                        title: 'Book Hotel',
-                        desc: 'In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies'
+                        title: 'Muhmonhona',
+                        desc: '4-5 yuldizli mexmon xona xizmati \n' +
+                            '3-maxal uzbek milliy taomlariMaka Madina Mexmon xonaAlohida mavjut '
                     },
                     {
                         img: Book2,
-                        title: 'Book Taxi',
-                        desc: 'In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies'
+                        title: ' Taxi',
+                        desc: 'Taxi topib berishi xizmati mavjutva boshqa xizmatlar mavjut'
                     },
                     {
                         img: Book3,
-                        title: 'Book Plane',
-                        desc: 'In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies'
+                        title: ' Samolyot',
+                        desc: 'Togridan togri reys xizmatlar bepul Biitel topib berish xizmat mavjut'
                     },
                     {
                         img: Book4,
-                        title: 'Global Tour',
-                        desc: 'In-depth interviews with 19 owners of exceptionally successful US-based conventional travel agencies'
+                        title: ' Visa',
+                        desc: 'Umra visa va sayoxat visa mavjut aloxida visa oberish xam mavjut'
                     }
                 ].map((service, index) => (
                     <div
                         key={index}
-                        className={"w-[280px] h-[390px] border border-gray-200 rounded-[25px] backdrop-[#FAFAFF] flex flex-col justify-center items-center"}
+                        className={"w-[280px] h-[300px] border border-gray-200 rounded-[25px] backdrop-[#FAFAFF] flex flex-col justify-center items-center"}
                         data-aos="fade-right" data-aos-delay={(index + 1) * 100}
                     >
                         <img className={"w-[100px] h-[75px]"} src={service.img} alt={service.title}/>
@@ -108,8 +109,7 @@ function Services(props) {
                                 onClick={() => showModal(service.title)}
                                 className={"mt-4 w-[150px] h-[40px] bg-white rounded-[10px] text-[#EEAA2B] border border-[#EEAA2B] hover:bg-[#EEAA2B] hover:text-white"}
                             >
-                                Explore More
-                            </Button>
+Murojat uchun                            </Button>
                             <Modal
                                 title={service.title}
                                 open={isModalOpen && currentService === service.title}

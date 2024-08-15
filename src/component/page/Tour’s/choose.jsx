@@ -18,33 +18,33 @@ function Choose(props) {
                     <div className={"translate-y-20 ml-32  sm:translate-y-[100px] sm:ml-0"}>
                         <h1 className={"text-[36px] w-[550px] sm:w-[350px] sm:text-[25px]"}>Nima uchun bizni tanlaysiz?</h1>
                         <p className={"w-auto text-[16px] sm:w-full sm:mt-4 " }>
-                            Sifatli an'anaviy sayyohlik agentliklari pul qiymatini ta'minlaydi, degan konsensus mavjud edi. Biroq, bu ko'plab iste'molchilarning yuqori darajadagi tashvishi bilan birga keldi
+                            Biz sizga ishonchli va sfatli xizmat korsatishdan mamnunmiz
                         </p>
                         <div className={"w-full flex  items-center  pt-[50px] sm:h-auto " } data-aos="fade-down"  data-aos-delay="200">
                             <img src={Airport} alt="" className={"sm:h-[90px] sm:mt-3"}/>
-                            <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Airport Car</h1>
-                            <p className={"w-[300px] pt-6 ml-[-98px] sm:ml-[-160px] sm:mt-4 sm:w-[88%]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
+                            <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-2 sm:w-[280px] sm:-translate-y-0 sm:mb-16 sm:text-[21px]"}>Transport xizmati</h1>
+                            <p className={"w-[300px] pt-6 ml-[-210px] sm:ml-[-220px] sm:mt-4 sm:w-[88%] sm:text-[16px]"}>Xojilarimizi 14 kun davomida  transport xizmatlarini uz ichiga oladi </p>
                         </div>
                         <div className={"w-full flex   items-center  pt-[50px]  sm:h-auto " } data-aos="fade-down"  data-aos-delay="300">
                             <img src={Airport1} alt="" className={"sm:h-[90px] sm:mt-3"}/>
                             <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>24/7 Support</h1>
-                            <p className={"w-[300px] pt-6 ml-[-118px] sm:ml-[-176px] sm:mt-6 sm:w-[80%]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
+                            <p className={"w-[300px] pt-6 ml-[-115px] sm:ml-[-176px] sm:mt-6 sm:w-[80%]"}>24/7  qo`llab-quvatlash murojat qilish munkun</p>
                         </div>
                         <div className={"w-full flex  items-center  pt-[50px] sm:h-auto" } data-aos="fade-down"  data-aos-delay="400">
                             <img src={Airport2} alt="" className={"sm:h-[90px] sm:mt-3"}/>
-                            <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Special Discount</h1>
-                            <p className={"w-[300px] pt-6 ml-[-148px] sm:ml-[-172px] sm:mt-6 sm:w-[80%]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
+                            <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Maxsus chegirma</h1>
+                            <p className={"w-[300px]  ml-[-158px] sm:ml-[-172px] sm:mt-6 sm:w-[80%]"}>Qizil dengiz sayohati</p>
                         </div>
                         <div className={"w-full flex  items-center  pt-[50px] sm:h-auto" } data-aos="fade-down"  data-aos-delay="500">
                             <img src={Airport4} alt="" className={"sm:h-[90px] sm:mt-4"}/>
-                            <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Special Discount</h1>
-                            <p className={"w-[300px] pt-6 ml-[-148px] sm:mt-6 sm:w-[80%]  sm:ml-[-170px]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
+                            <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[250px] sm:text-[16px] sm:font-bold"}>Ekskursiyay yo‘riqnomasi</h1>
+                            <p className={"w-[300px] pt-6 ml-[-226px] sm:mt-4 sm:w-[80%]  sm:ml-[-210px]"}>Maka Madina ziyorati yol-boshlovchi  nazorati ostida  </p>
                         </div>
-                        <div className={"w-full flex  items-center  pt-[50px] sm:h-auto" } data-aos="fade-down"  data-aos-delay="500">
-                            <img src={Airport3} alt="" className={"sm:h-[90px] sm:mt-5"}/>
-                            <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Tour Guide</h1>
-                            <p className={"w-[300px] pt-6 ml-[-98px] sm:mt-6 sm:w-[80%]  sm:ml-[-170px]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>
-                        </div>
+                        {/*<div className={"w-full flex  items-center  pt-[50px] sm:h-auto" } data-aos="fade-down"  data-aos-delay="500">*/}
+                        {/*    <img src={Airport3} alt="" className={"sm:h-[90px] sm:mt-5"}/>*/}
+                        {/*    <h1 className={"-translate-y-6 ml-5  text-[20px] sm:ml-4 sm:w-[200px]"}>Tour Guide</h1>*/}
+                        {/*    <p className={"w-[300px] pt-6 ml-[-98px] sm:mt-6 sm:w-[80%]  sm:ml-[-170px]"}>There was consensus, not surprisingly, that quality traditional travel agencies</p>*/}
+                        {/*</div>*/}
 
                     </div>
                 </div>
