@@ -137,7 +137,7 @@ const MultiCarousel = () => {
                     →
                 </button>
             }
-            className='flex justify-center items-center sm:pl-['
+            className='flex justify-center items-center sm:justify-start sm:items-start'
         >
             {trips.map((trip, index) => (
                 <div key={index} className="flex h-[450px]   flex-col items-start p-4 sm:ml-[50px] lg:ml-20 sm:w-full lg:w-full">
@@ -150,30 +150,30 @@ const MultiCarousel = () => {
                         View Details
                     </Button>
                     <Modal
-                        title={null}
-                        open={isModalOpen}
-                        onOk={handleOk}
-                        onCancel={handleCancel}
-                        footer={null}
-                        centered
-                        style={{
-                            width: '90%',
-                            maxWidth: '600px',
-                            padding: '20px',
-                        }}
-                        bodyStyle={{
-                            padding: '20px',
-                            borderRadius: '10px',
-                            backgroundColor: '#FDFDFD', // Set the background color
-                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
-                        }}
-                        wrapClassName="custom-modal-overlay"
-                    >
-                        <div className="flex flex-col items-center">
-                            <img
-                                src={currentTrip.img}
+                                    title={null}
+                                    open={isModalOpen}
+                                    onOk={handleOk}
+                                    onCancel={handleCancel}
+                                    footer={null}
+                                    
+                                    centered
+                                    style={{
+                                    width: '100%',
+                                    padding: '20px',
+                                }}
+                                    bodyStyle={{
+                                    padding: '20px',
+                                    borderRadius: '10px',
+                                    backgroundColor: '#FDFDFD', // Set the background color
+                                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                                }}
+                                    wrapClassName="custom-modal-overlay"
+                                    >
+                                    <div className="flex flex-col items-center mb-20">
+                                    <img
+                                    src={currentTrip.img}
                                 alt=""
-                                className="w-[80%] max-w-md h-[300px] object-cover rounded-lg shadow-lg"
+                                className="w-[80%] max-w-md h-[200px] object-cover rounded-lg shadow-lg"
                             />
                             <h2 className="text-xl font-semibold mt-4 mb-2">{currentTrip.name}</h2>
                             <p className="text-center text-base text-gray-600 mb-4">Join the leader in smallship cruising on the Great Lakes,</p>
