@@ -76,7 +76,7 @@ function Services(props) {
                 {[
                     {
                         img: Book,
-                        title: 'Muhmonhona',
+                        title: 'Muhmonxona',
                         desc: '4-5 yuldizli mexmon xona xizmati \n' +
                             '3-maxal uzbek milliy taomlariMaka Madina Mexmon xonaAlohida mavjut '
                     },

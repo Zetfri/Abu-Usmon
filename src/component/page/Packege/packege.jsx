@@ -1,12 +1,16 @@
+
+
 import React, { useState } from 'react';
 import { Button, Modal, message } from 'antd';
 import Img from "../../asstes/u`mra/photo_2024-08-09_20-43-00 1.png";
 import Img1 from "../../asstes/u`mra/photo_2024-08-15_18-04-16 1.png";
 import Img2 from "../../asstes/u`mra/photo_2024-08-09_20-36-22 1.png";
 import Img3 from "../../asstes/travel3.jpg";
-// import Img4 from "../../asstes/umra/photo_20_2024-08-10_18-07-10.jpg";
-// import Img5 from "../../asstes/umra/photo_18_2024-08-10_18-07-10.jpg";
-// import Img6 from "../../asstes/umra/photo_14_2024-08-10_18-07-10.jpg";
+import Img4 from "../../asstes/img/usmon-1.jpg";
+import Img5 from "../../asstes/img/usmon-2.jpg";
+import Img6 from "../../asstes/img/usmon-3.jpg";
+import Img7 from "../../asstes/img/usmon-4.jpg";
+import Img8 from "../../asstes/img/usmon-5.jpg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Image } from 'antd';
@@ -84,10 +88,15 @@ const MultiCarousel = () => {
     };
 
     const trips = [
-        { name: "Masjidul Haram", img: Img, p: "Masjidul haramga 11-kun umra amallari" },
+        { name: "Masjidul Haram", img: Img, p: "Masjidul haramga 10-kun umra amallari" },
         { name: "Qizil dengiz", img: Img1, p: "Qizildengiz sayohati          " },
         { name: "Madina munavara", img: Img2 , p: "Qubo masjidi                      "},
-        { name: "Manar Al-Tavhit 2", img: Img3 ,p: "Hojilarimizdan foto lavha                     "},
+        { name: "Madina munavara", img: Img3 ,p: "Hojilarimizdan foto lavha                     "},
+        { name: "Madina munavara", img: Img4 ,p: "Hojilarimizdan foto lavha                     "},
+        { name: "Madina munavara", img: Img5 ,p: "Hojilarimizdan foto lavha                     "},
+        { name: "Madina munavara", img: Img6 ,p: "Hojilarimizdan foto lavha                     "},
+        { name: "Madina munavara", img: Img7 ,p: "Hojilarimizdan foto lavha                     "},
+        { name: "Madina munavara", img: Img8 ,p: "Hojilarimizdan foto lavha                     "},
     ];
 
     return (
@@ -147,31 +156,30 @@ const MultiCarousel = () => {
                         {trip.p}
                     </p>
                     <Button onClick={() => showModal(trip)} className="w-[170px] h-[50px] mt-2 rounded-lg bg-[#EEAA2B] text-white shadow-md hover:bg-[#d99926]">
-                        View Details
-                    </Button>
+Murojat uchun                    </Button>
                     <Modal
-                                    title={null}
-                                    open={isModalOpen}
-                                    onOk={handleOk}
-                                    onCancel={handleCancel}
-                                    footer={null}
-                                    
-                                    centered
-                                    style={{
-                                    width: '100%',
-                                    padding: '20px',
-                                }}
-                                    bodyStyle={{
-                                    padding: '20px',
-                                    borderRadius: '10px',
-                                    backgroundColor: '#FDFDFD', // Set the background color
-                                    boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
-                                }}
-                                    wrapClassName="custom-modal-overlay"
-                                    >
-                                    <div className="flex flex-col items-center mb-20">
-                                    <img
-                                    src={currentTrip.img}
+                        title={null}
+                        open={isModalOpen}
+                        onOk={handleOk}
+                        onCancel={handleCancel}
+                        footer={null}
+
+                        centered
+                        style={{
+                            width: '100%',
+                            padding: '20px',
+                        }}
+                        bodyStyle={{
+                            padding: '20px',
+                            borderRadius: '10px',
+                            backgroundColor: '#FDFDFD', // Set the background color
+                            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
+                        }}
+                        wrapClassName="custom-modal-overlay"
+                    >
+                        <div className="flex flex-col items-center mb-20">
+                            <img
+                                src={currentTrip.img}
                                 alt=""
                                 className="w-[80%] max-w-md h-[200px] object-cover rounded-lg shadow-lg"
                             />
